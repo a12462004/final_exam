@@ -1,0 +1,77 @@
+.side{
+  width:20%;
+  vertical-align:top;
+  display: inline-block;
+  @media(max-width:800px){
+    width:30%;
+  }
+  @media(max-width:600px){
+    width:95%;
+  }
+  .info{
+      width: 100%;
+      @media(max-width:420px){
+        width:97%;
+      }
+      padding: 20px 10px 20px 0px;
+      margin: 10px;
+      text-align:center;
+      background:#fff;
+      font-family: "微軟正黑體";
+      border-radius: 5px;
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+      &:before{
+        content:"";
+        display:inline-block;
+        width:0px;
+        height:100%;
+        vertical-align:middle;   
+      }
+      .avatar{
+        width:120px;
+        height:120px;
+        margin-bottom: 30px;
+        display:inline-block;
+        img{
+          width:100%;
+          height:100%;
+          border-radius:50%;
+          box-shadow: 0 10px 30px rgba(#000,0.9);
+        }
+      }
+      .name{
+        font-size: 150%;
+        font-family: 'Righteous', cursive;
+      }
+      p {
+        padding: 15px 5px 0px 20px; 
+        text-align: left;    
+      }
+    }
+    .airtcle-list{
+      width: 92%;
+      @media(max-width:600px){
+        width:95%;
+      }
+      @media(max-width:420px){
+        width:90%;
+      }
+      padding: 20px 10px 20px 20px;
+      margin: 10px;
+      background:#fff;
+      font-family: "微軟正黑體";
+      border-radius: 5px;
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+     .title{
+        font-size: 120%;
+     }
+     li{
+      line-height: 30px;
+      &:before{
+        content: url("http://f.cl.ly/items/0g1t100T151j0o0l0j0R/double-angle-pointing-to-right.png");
+        vertical-align: middle;
+        margin-right: 5px;  
+      }
+     }
+    }
+}

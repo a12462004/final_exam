@@ -1,0 +1,41 @@
+.feature{
+  background:#fff;
+  .cell{
+    width:25%;
+    padding: 10px;
+    text-align:center;
+    font-family:sans-serif;
+    @media(max-width:600px){
+      width:calc(50% - 20px);
+      display:inline-block;
+    }
+    @media(max-width:420px){
+      display:block;
+      width:auto;
+    }
+  }
+  i{
+    display:inline-block;
+    width:64px;
+    height:64px;
+    background: #d6e5fc;
+    border-radius: 50%;
+    font-size: 30px;
+    line-height:65px;
+    color:#2d4c96;
+    box-shadow: 0 5px 10px #000;
+    //下面這段可以讓文字有漸層色效果，可從icon圖示看到
+    &:before{
+      background: linear-gradient(to bottom,#2d4c96 0, #2e3266 100%);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip:text;
+    }
+  }
+  .feature-title{
+    font-size:25px;
+    margin: 10px 0;
+  }
+  p{
+    line-height:1.4;
+  }
+}
